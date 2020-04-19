@@ -6,28 +6,27 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        for (int i = 1; i <= n; i++) {
-            int x = in.nextInt();
-            if (x >= 80) {
-                System.out.printf("4 ");
-            } else if (x >= 75){
-                System.out.printf("3.5 ");
-            } else if (x >= 70){
-                System.out.printf("3 ");
-            } else if (x >= 65){
-                System.out.printf("2.5 ");
-            } else if (x >= 60){
-                System.out.printf("2 ");
-            } else if (x >= 55){
-                System.out.printf("1.5 ");
-            } else if (x >= 50){
-                System.out.printf("1 ");
-            } else {
-                System.out.printf("0 ");
+        int total = 0;
+        while (true) {
+            int n = in.nextInt();
+            int price = 0;
+
+            if (n <= 0) {
+                System.out.println(total);
             }
 
+        int p = in.nextInt();
+        int take_away = in.nextInt();
+        if (take_away != 0) {
+            price += 10;
+            System.out.println((n * p) + price);
+            total = total + ((n * p) + price);
+        } else
+            System.out.println((n * p) + price);
+        total = total + ((n * p) + price);
 
-        }
     }
-}
+
+            }
+        }
+
