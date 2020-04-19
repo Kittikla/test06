@@ -13,20 +13,19 @@ public class Main {
 
             if (n <= 0) {
                 System.out.println(total);
+                break;
             }
-
         int p = in.nextInt();
         int take_away = in.nextInt();
         if (take_away != 0) {
             price += 10;
             System.out.println((n * p) + price);
             total = total + ((n * p) + price);
-        } else
+        } else {
             System.out.println((n * p) + price);
-        total = total + ((n * p) + price);
-
-    }
-
-            }
+            total = total + ((n * p) + price);
         }
+    }
+    }
+}
 
